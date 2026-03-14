@@ -32,6 +32,9 @@ jobs:
      - name: Build with Maven
        run: mvn test
 
+     - name: Build project
+       run: mvn package
+
      - name : Docker login
        uses: docker/login-action@v3
        with:
