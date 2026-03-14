@@ -12,13 +12,13 @@ jobs:
   steps:
      
      - name: Executing code checkout
-       runs: echo "Checkout job -1 "
+       run: echo "Checkout job -1 "
 
      - name : checkout code 
        uses : actions/checkout@v5
 
      - name: Executing compile and build jobs -1
-       runs: echo "Dependency download"
+       run: echo "Dependency download"
 
      - name: Java setup 
        uses: actions/setup-java@v4
